@@ -1,0 +1,5 @@
+
+# AuthType Basic
+# AuthName "Passwortgeschützter Bereich"
+# AuthUserFile /mnt/rid/06/75/56900675/htdocs/.htpasswd
+# Require valid-user
