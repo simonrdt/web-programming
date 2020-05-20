@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Web Programming - Session 02</title>
+		<title>Web Programming - Session 03</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/simon.css">
@@ -43,7 +43,7 @@
 				<section class="background background--blue">
 					<section>	
 						<h1>
-							Session 02
+							Session 03
 						</h1>
 						<span class="Intro-subline">CSS3</span>
 					</section>
@@ -54,7 +54,7 @@
 									Unser Plan heute
 								</h1>
 							</div>
-							<div class=" Grid-cell">
+							<div class="Grid-cell">
 								<div class="u-textLeft stations">
 									<div class="station">
 											<p class="small-tags">
@@ -75,51 +75,18 @@
 												Kurze Wiederholung
 											</h4>
 											<p>
-												HTML Tags & Übung
+												Wie hängen HTML & CSS zusammen
 											</p>
 									</div>
 									<div class="station">
 											<p class="small-tags">
-												Vortrag
+												Group Programming
 											</p>
 											<h4>
-												Element Struktur
+												Webseite nachbauen
 											</h4>
 											<p>
-												Header, Body, Footer
-											</p>
-									</div>
-									<div class="station">
-											<p class="small-tags">
-												Vortrag
-											</p>
-											<h4>
-												CSS3
-											</h4>
-											<p>
-												Was ist der Unterschied zwischen HTML und CSS?
-											</p>
-									</div>
-									<div class="station">
-											<p class="small-tags">
-												CSS im Detail
-											</p>
-											<h4>
-												Class, Styles
-											</h4>
-											<p>
-												Was sind Klassen? Welche Styles gibt es und wo kann ich die nachlesen?
-											</p>
-									</div>
-									<div class="station">
-											<p class="small-tags">
-												Übung
-											</p>
-											<h4>
-												Landingpage nachbauen
-											</h4>
-											<p>
-												Zur Übung bauen wir grob eine Landingpage nach
+												Übung von letzter Woche
 											</p>
 									</div>
 								</div>
@@ -136,192 +103,6 @@
 						</h1>
 						<span class="Intro-subline">Aufbau und HTML Tags</span>
 					</section>
-
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<h1>
-									Document Strukur
-								</h1>
-								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
-									In einer HTML-Datei schreibt der Ersteller der Webseite den Text einer Website. Mit der HTML-Datei lässt sich ein Text strukturieren und formatieren (z.B. Schriftgröße und Schriftart). Außerdem binden Sie via HTML Links auf andere Webseiten ein oder ergänzen Ihren Text um Bilder, Videos uvm. 
-								</p>
-							</div>
-
-							<div class="Grid-cell u-size2of3 u-before1of6">
-								<img src="assets/01-session/SVG/html-struktur.svg">
-							</div>
-						</div>
-					</section>
-
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<h1>
-									Tag Struktur
-								</h1>
-								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
-									Tags mit einem Anfang und einem Ende sind Container oder Behälter für Informationen und strukturieren den Inhalt. Meist besteht die Beschriftung nur aus wenigen Buchstaben und ist eine Abkürzung für einen englischen Begriff.
-								</p>
-								<div class="Grid-cell u-size2of3 u-before1of6">
-									<img src="assets/01-session/SVG/tag-graphic.svg">
-								</div>
-							</div>
-						</div>
-					</section>
-					
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<h1 class="u-mb2">
-									HTML Tags — Eine Übersicht
-								</h1>
-								<div class="Grid-cell u-size2of3 u-before1of6 u-textLeft">
-									<div class="Grid-cell u-mb2">
-										<h2>Headline Tags</h2>
-										<h3 class="small-tags">h1 — h6</h3>
-										<p class="u-mb2">Headline Tags zeichnen die Überschriften aus und sind hierarchisch geordnet.</p>
-									</div>
-									<div class="Grid-cell u-mb2">
-										<h2>Paragraph Tags</h2>
-										<h3 class="small-tags">p</h3>
-										<p class="u-mb2">Paragraphen zeichnen Textabschnitte aus.</p>
-									</div>
-									<div class="Grid-cell u-mb2">
-										<h2>Link Tags</h2>
-										<h3 class="small-tags">a</h3>
-										<p class="u-mb2">a Tags signalisieren dem Browser, dass ein Link eingebunden wird. Ein Link braucht immer das "Ziel Attribut" href="" damit der Browser weiß, wohin er verlinken soll.</p>
-								</div>
-							</div>
-						</div>
-					</section>
-					
-					<section>	
-						<div class="Grid Grid--withGutter">
-								<div class="Grid-cell u-size2of3 u-before1of6 u-textLeft">
-									<div class="Grid-cell u-mb2">
-										<h2>Bild Tags</h2>
-										<h3 class="small-tags">img</h3>
-										<p class="u-mb2">Bilder werden mit dem img Tag dargestellt. Bilder benötigen gleich 2 Attribute. Die Quelle: src="" und alt"".</p>
-									</div>
-									<div class="Grid-cell u-mb2">
-										<h2>Listen</h2>
-										<h3 class="small-tags">ol / ul und li</h3>
-										<p class="u-mb2">Listen sind verschachtelte Elemente. ol steht für <em>ordered list</em> also eine geordnete Liste und ul für die <em>unordered list</em> also eine ungeordnete Liste. Der Unterschied ist in der Darstellung der einzelnen li tags, also <em>list-items</em>. Diese werden entweder mit Ziffern oder mit Bullets dargestellt.</p>
-									</div>
-									<div class="Grid-cell u-mb2">
-										<h2>Container</h2>
-										<h3 class="small-tags">div</h3>
-										<p class="u-mb2">Das div-Element ist dazu gedacht, mehrere Elemente wie Text, Grafiken, Listen usw., in einen gemeinsamen Bereich einzuschließen. Es ist dazu gedacht, Bereiche zu erzeugen, die mit Hilfe von CSS formatiert werden können. div bedeutet division, also Bereich oder Abteilung.</p>
-									</div>
-							</div>
-						</div>
-					</section>
-
-
-				</section>
-				
-				<section class="background--dark">
-
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<h1>
-									Body Struktur
-								</h1>
-							</div>
-						</div>
-					</section>
-					
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<h1>
-									Verschachteln
-								</h1>
-								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
-									Es ist gängige Praxis unterschiedliche HTML Elemente ineinander zu verschachteln. Dabei ist zu beachten: <strong>Das zuerst geöffnete Tag muss als letztes geschlossen werden</strong>.
-								</p>
-							</div>
-
-							<div class="Grid-cell u-size2of3 u-before1of6">
-								<img src="assets/02-session/4x/nesting@4x.png">
-							</div>
-						</div>
-					</section>
-
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<h1>
-									HTML5 Elemente
-								</h1>
-								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
-									HTML5 brachte einige Vorteile. Darunter die Tags <strong>header, footer, nav, main, article und section</strong>. Diese dienen der besseren Strukturierung der Seite und hilft Google die Seite besser auszulesen.
-								</p>
-							</div>
-						</div>
-					</section>
-
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<h1 class="u-mb2">
-									HTML5 Tags
-								</h1>
-								<div class="Grid-cell u-size2of3 u-before1of6 u-textLeft">
-									<div class="Grid-cell u-mb2">
-										<h2>Header</h2>
-										<h3 class="small-tags">< header ></h3>
-										<p class="u-mb2">Die meisten Webseiten beinhalten am Beginn der Seite eine Navigationsleiste mit Links, Logo etc. Diese wird mit dem header tag ausgezeichnet.</p>
-									</div>
-									<div class="Grid-cell u-mb2">
-										<h2>Footer</h2>
-										<h3 class="small-tags">< footer ></h3>
-										<p class="u-mb2">Paragraphen zeichnen Textabschnitte aus.</p>
-									</div>
-									<div class="Grid-cell u-mb2">
-										<h2>Navigation</h2>
-										<h3 class="small-tags">< nav ></h3>
-										<p class="u-mb2">Die Haupt-Navigation wird durch ein nav-Element umschlossen, das aber auch für Unter-Navigationen verwendet werden kann.</p>
-								</div>
-							</div>
-						</div>
-					</section>
-					
-					<section>	
-						<div class="Grid Grid--withGutter">
-								<div class="Grid-cell u-size2of3 u-before1of6 u-textLeft">
-									<div class="Grid-cell u-mb2">
-										<h2>Hauptinhalt der Seite</h2>
-										<h3 class="small-tags">< main ></h3>
-										<p class="u-mb2">Der Hauptinhalt der Webseite wird im main tag abgebildet.</p>
-									</div>
-									<div class="Grid-cell u-mb2">
-										<h2>Artikel / Beiträge</h2>
-										<h3 class="small-tags">< article ></h3>
-										<p class="u-mb2">Ein in sich geschlossener Artikel, der Überschrift (und evtl. einige sections, einen eigenen header und footer) enthält.
-									</div>
-									<div class="Grid-cell u-mb2">
-										<h2>Kapitel, Module, Inhaltsabschnitte</h2>
-										<h3 class="small-tags">< section ></h3>
-										<p class="u-mb2">Eine Section ist im Gegensatz zum Artikel ein Kapitel oder ein Abschnitt mit Inhalten. Es kann mehrere ähnliche Blöcke geben.</p>
-									</div>
-							</div>
-						</div>
-					</section>
-
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="Grid-cell u-size2of3 u-before1of6">
-								<img src="assets/02-session/SVG/body-structure.svg">
-							</div>
-						</div>
-					</section>
-
-				</section>
-
-				<section class="background--dark">
 
 					<section>	
 						<div class="Grid Grid--withGutter">
@@ -467,32 +248,6 @@
 						<div class="Grid Grid--withGutter">
 							<div class="u-block">
 								<h1 class="u-mb2">
-									Schriften, Farben, Hintergründe
-								</h1>
-								<div class="Grid-cell u-size2of3 u-before1of6 u-textLeft">
-									<div class="Grid-cell u-mb2">
-										<h2>Schriftart und Schriftgröße</h2>
-										<h3 class="small-tags">font-family & font-size</h3>
-										<p class="u-mb2">Über font-family können Schriften definiert werden. Die font-size gibt die Schriftgröße des gewählten HTML Elements an.</p>
-									</div>
-									<div class="Grid-cell u-mb2">
-										<h2>Schriftfarben</h2>
-										<h3 class="small-tags">color</h3>
-										<p class="u-mb2">Über die color property können die Schriftfarben bestimmt werden.</p>
-									</div>
-									<div class="Grid-cell u-mb2">
-										<h2>Hintegründe</h2>
-										<h3 class="small-tags">background</h3>
-										<p class="u-mb2">Über background können Farben, Verläufe und Bilder einem HTML Element zugeordnet werden.</p>
-								</div>
-							</div>
-						</div>
-					</section>
-
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<h1 class="u-mb2">
 									CSS Property Übersicht
 								</h1>
 								<div class="Grid-cell u-size2of3 u-before1of6 u-textLeft">
@@ -510,44 +265,49 @@
 						</div>
 					</section>
 
+
+				</section>
+				
+				<section class="background--dark">
+
 					<section>	
 						<div class="Grid Grid--withGutter">
 							<div class="u-block">
-								<p class="small-tags">
-									Übung
+								<h1>
+									Body Struktur
+								</h1>
+							</div>
+						</div>
+					</section>
+					
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="u-block">
+								<h1>
+									Verschachteln
+								</h1>
+								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
+									Es ist gängige Praxis unterschiedliche HTML Elemente ineinander zu verschachteln. Dabei ist zu beachten: <strong>Das zuerst geöffnete Tag muss als letztes geschlossen werden</strong>.
 								</p>
-								<h1>
-									CSS Selektoren
-								</h1>
-								<div class="Grid-cell u-size1of2 u-before1of4">
-									<p class="u-mb2">
-										Spielt das CSS Diner so weit ihr kommt.
-									</p>
-										<a class="u-mb2 btn" target="_blank" href="https://flukeout.github.io/#">Zur Webseite</a>
-								</div>
+							</div>
+
+							<div class="Grid-cell u-size2of3 u-before1of6">
+								<img src="assets/02-session/4x/nesting@4x.png">
 							</div>
 						</div>
 					</section>
 
-				</section>
-
-
-				<section class="background--dark">
 					<section>	
 						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<h1>
-									Pause
-								</h1>
-								<h2>
-									Bis 15:15
-								</h2>
+							<div class="Grid-cell u-size2of3 u-before1of6">
+								<img src="assets/02-session/SVG/body-structure.svg">
 							</div>
 						</div>
 					</section>
+
 				</section>
 
-				<section class="background--dark">
+								<section class="background--dark">
 
 					<section>	
 						<div class="Grid Grid--withGutter">
@@ -568,18 +328,29 @@
 							</div>
 						</div>
 					</section>
-
 					<section>	
 						<div class="Grid Grid--withGutter">
 							<div class="u-block">
-								<h1 class="u-mb2">
-									Los geht's!
+								<div class="Grid-cell u-size2of3 u-before1of6">
+									<img src="assets/03-session/2x/website-modules.jpg">
+								</div>
+						</div>
+					</section>
+				</section>
+
+				<section class="background--dark">
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="u-block">
+								<h1>
+									Pause
 								</h1>
-								<a class="u-mb2 btn" target="_blank" href="https://miro.com/welcomeonboard/OBi2ovgy0fGdB7HHBC1CmNGldKQZEDSzHxluGvXNDsm4XsBQbeCXBYAtbsrEm6GN">Zum Tool</a>
 							</div>
 						</div>
 					</section>
 				</section>
+
+
 
 				<section class="background--dark">
 					
@@ -594,7 +365,7 @@
 								</h1>
 								<div class="Grid-cell u-size1of2 u-before1of4">
 									<p class="u-mb2">
-										Baut die Webseite die wir in Module eingeteilt haben grob nach. Ein Starterpaket mit Bilddaten und angelegten Dateien bekommt ihr zum Start.
+										Baut die Webseite die wir in Module eingeteilt haben grob nach. Ein Starterpaket mit Bilddaten und angelegten Dateien bekommt ihr.
 									</p>
 									<a class="btn" href="session-02/uebung/uebung.zip" target="_blank">Download</a>
 								</div>
