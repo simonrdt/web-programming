@@ -14,3 +14,27 @@ img {
 a {
   text-decoration: none;
 }
+
+header {
+  background: url(assets/header-background.jpg);
+  background-size: cover;
+  height: 50vh;
+}
+
+h1 {
+  font-size: 42px;
+  padding-top: 150px;
+}
+
+.button {
+  background: #000000;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.Header-content {
+  margin-left: 50px;
+}
