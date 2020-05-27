@@ -43,9 +43,9 @@
 				<section class="background background--blue">
 					<section>	
 						<h1>
-							Session 03
+							Session 04
 						</h1>
-						<span class="Intro-subline">CSS3</span>
+						<span class="Intro-subline">Layouts mit CSS</span>
 					</section>
 					<section class="background-darken">	
 						<div class="Grid Grid--withGutter">
@@ -69,24 +69,46 @@
 									</div>
 									<div class="station">
 											<p class="small-tags">
-												Letzte Woche
+												Ausrichtung von Elementen
 											</p>
 											<h4>
-												Kurze Wiederholung
+												Layouts erstellen
 											</h4>
 											<p>
-												Wie hängen HTML & CSS zusammen
+												Flexbox & CSS Grid
 											</p>
 									</div>
 									<div class="station">
 											<p class="small-tags">
-												Group Programming
+												Attribute und Funktionsweise
 											</p>
 											<h4>
-												Webseite nachbauen
+												Flexbox
 											</h4>
 											<p>
-												Übung von letzter Woche
+												Einführung in Flexbox 
+											</p>
+									</div>
+									<div class="station">
+											<p class="small-tags">
+												Ein Grid einrichten
+											</p>
+											<h4>
+												CSS Grids
+											</h4>
+											<p>
+												Einführung in CSS Grids
+											</p>
+									</div>
+									<div class="station">
+											<p class="small-tags">
+												Vertiefung
+											</p>
+											<h4>
+												Flexbox Froggy / Flexbox Defense / CSS Grid Garden
+											</h4>
+											<p>
+												Game
 											</p>
 									</div>
 								</div>
@@ -99,29 +121,37 @@
 				<section class="background--dark">
 					<section>	
 						<h1>
-							Kurze Wiederholung
+							Ausrichtung von Elementen
 						</h1>
-						<span class="Intro-subline">Aufbau und HTML Tags</span>
+						<span class="Intro-subline">Flexbox & CSS Grid</span>
 					</section>
 
 					<section>	
 						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<h1>
-									CSS3
-								</h1>
+							<div class="Grid-cell u-size3of4 u-before1of8">
+								<h2>
+									Welche Möglichkeiten gibt es Layouts mit CSS Grids zu realisieren?
+								</h2>
+								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
+									Die beiden gängisten und beliebtesten Möglichkeiten zur Umsetzung von Layouts sind die CSS Eigenschaften Flexbox und Grid.
+
+									Sie wurden entwickelt um Konstruktionen von flexiblen und responsiven Layouts zu ermöglichen.
+								</p>
+								<img class="u-mb2" src="assets/04-session/SVG/init-flex.svg">
+								<img class="u-mb2" src="assets/04-session/SVG/init-grid.svg">
+
 							</div>
 						</div>
 					</section>
-					
+
 					<section>	
 						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<h1>
-									Was ist CSS?
-								</h1>
+							<div class="Grid-cell u-size3of4 u-before1of8">
+								<h2>
+									Wie funktioniert das?
+								</h2>
 								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
-									Im CSS werden die Styles der HTML Elemente festgelegt.
+									Mit dem Hinzufügen des Attributes zu einem Container werden automatisch alle Child-Elemente des Containers auf erster Ebene zu Flex-items (flex) oder Inhaltscontaintern (grid). Diese können dann mit weiteren Eigenschaften versehen werden.
 								</p>
 							</div>
 						</div>
@@ -129,23 +159,17 @@
 
 					<section>	
 						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<div class="Grid-cell u-size2of3 u-before1of6">
-									<img src="assets/02-session/SVG/html-css.svg">
-								</div>
-							</div>
-						</div>
-					</section>
-
-
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<h1 class="u-mb2">
-									Wie sieht eine CSS Datei aus?
-								</h1>
-								<div class="Grid-cell u-size2of3 u-before1of6">
-									<img src="assets/02-session/4x/css-file@4x.png">
+							<div class="Grid-cell u-size3of4 u-before1of8">
+								<h2>
+									Beispiel Grid
+								</h2>
+								<div class="Grid-cell u-size3of4 u-before1of8 u-mb2">
+									<p class="codepen" data-height="386" data-theme-id="dark" data-default-tab="result" data-user="simonrdt" data-slug-hash="NWGVaab" style="height: 386px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="CSS Grid Example">
+									  <span>See the Pen <a href="https://codepen.io/simonrdt/pen/NWGVaab">
+									  CSS Grid Example</a> by Simon Reinhardt (<a href="https://codepen.io/simonrdt">@simonrdt</a>)
+									  on <a href="https://codepen.io">CodePen</a>.</span>
+									</p>
+									<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 								</div>
 							</div>
 						</div>
@@ -153,43 +177,21 @@
 
 					<section>	
 						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<h1 class="u-mb2">
-									Class selektor
-								</h1>
-								<div class="Grid-cell u-size2of3 u-before1of6">
-									<img src="assets/02-session/4x/css-class@4x.png">
+							<div class="Grid-cell u-size3of4 u-before1of8">
+								<h2>
+									Beispiel Flexbox
+								</h2>
+								<div class="Grid-cell u-size3of4 u-before1of8 u-mb2">
+									<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="simonrdt" data-slug-hash="WNQBZzp" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="CSS Flexbox Example">
+								  <span>See the Pen <a href="https://codepen.io/simonrdt/pen/WNQBZzp">
+								  CSS Flexbox Example</a> by Simon Reinhardt (<a href="https://codepen.io/simonrdt">@simonrdt</a>)
+								  on <a href="https://codepen.io">CodePen</a>.</span>
+								</p>
+								<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 								</div>
 							</div>
 						</div>
 					</section>
-
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<h1 class="u-mb2">
-									id selektor
-								</h1>
-								<div class="Grid-cell u-size2of3 u-before1of6">
-									<img src="assets/02-session/4x/css-id@4x.png">
-								</div>
-							</div>
-						</div>
-					</section>
-
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<h1 class="u-mb2">
-									html element selektor
-								</h1>
-								<div class="Grid-cell u-size2of3 u-before1of6">
-									<img src="assets/02-session/4x/css-html@4x.png">
-								</div>
-							</div>
-						</div>
-					</section>
-
 				</section>
 
 				<section class="background--dark">
@@ -198,34 +200,104 @@
 						<div class="Grid Grid--withGutter">
 							<div class="u-block">
 								<h1>
-									Style Properties
+									display: flex
 								</h1>
 							</div>
 						</div>
 					</section>
 					
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="Grid-cell u-size3of4 u-before1of8">
+								<h2>
+									Allgemeines zu Flexbox
+								</h2>
+								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
+									Flexbox ist ein eindimensionales Layoutmodell und ermöglicht eine Platzverteilung zwischen Elementen.
+								</p>
+								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
+									Bei der Arbeit mit Flexbox muss man in zwei Achsen denken - der Hauptachse und der Querachse. Die Hauptachse wird durch die Eigenschaft flex-direction definiert, und die Querachse verläuft senkrecht dazu. Alles, was wir mit flexbox machen, bezieht sich auf diese Achsen.
+								</p>
+							</div>
+						</div>
+					</section>
+
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="Grid-cell u-size2of3 u-before1of6">
+								<h2>
+									flex-direction: row (default)
+								</h2>
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/flexbox.svg">								
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/row.svg">								
+							</div>
+						</div>
+					</section>
+
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="Grid-cell u-size2of3 u-before1of6">
+								<h2>
+									flex-direction: row | row-reverse | column | column-reverse
+								</h2>
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/flexbox.svg">								
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/flex-row-rev.svg">
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/flex-col.svg">
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/flex-col-rev.svg">
+							</div>
+						</div>
+					</section>
+
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/row.svg">								
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/row-rev.svg">
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/col.svg">
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/col-rev.svg">
+							</div>
+						</div>
+					</section>
 
 					<section>	
 						<div class="Grid Grid--withGutter">
 							<div class="u-block">
 								<h1 class="u-mb2">
-									Abstände
+									Ausrichtung
 								</h1>
 								<div class="Grid-cell u-size2of3 u-before1of6 u-textLeft">
 									<div class="Grid-cell u-mb2">
-										<h2>Abstände innerhalb des Elements</h2>
-										<h3 class="small-tags">padding (top, left, bottom, right)</h3>
-										<p class="u-mb2">Erzwungener Leerraum zwischen dem Inhalt eines Elements und seinem eigenen Elementrand, also z.B. zwischen dem Text eines Elements und dem Rand dieses Elements.</p>
+										<h2>Ausrichtung auf der Hauptachse</h2>
+										<h3 class="small-tags">justify-content: flex-start | center | flex-end | space-around | space-between</h3>
+										<p class="u-mb2">Es werden alle flex-items auf der Hauptachse entsprechend der jeweiligen Eigenschaft in dem freien Raum ausgerichtet.</p>
 									</div>
 									<div class="Grid-cell u-mb2">
-										<h2>Abstände außerhalb des Elements</h2>
-										<h3 class="small-tags">margin (top, left, bottom, right)</h3>
-										<p class="u-mb2">Erzwungener Leerraum zwischen dem aktuellen Element und seinem Eltern- bzw. seinen Nachbarelementen.</p>
+										<h2>Ausrichtung auf der Kreuzachse</h2>
+										<h3 class="small-tags">align-items: flex-start | center | flex-end | baseline | stretch</h3>
+										<p class="u-mb2">Standardmäßig passt sich die Höhe oder Breite auf der Kreuzachse immer dem größten Element an (stretch). Wir können auch hier aber unterschiedliche Eigenschaften verwenden</p>
 									</div>
 									<div class="Grid-cell u-mb2">
-										<h2>Höhe und Breite eines Elements</h2>
-										<h3 class="small-tags">(max-)width / (max-)height</h3>
-										<p class="u-mb2">Mit den <em>width</em> oder <em>height</em> properties kann eine (maximale) Höhe oder Breite eines Elements festgelegt werden.</p>
+										<h2>Mehrspaltigkeit über das Container-Element </h2>
+										<h3 class="small-tags">flex-wrap: wrap | no-wrap</h3>
+										<p class="u-mb2"> Mit der Container-Eigenschaft flex-wrap kann festgelegt werden, dass Items in mehrere Spalten und Zeilen umbrechen.</p>
 								</div>
 							</div>
 						</div>
@@ -233,111 +305,121 @@
 
 					<section>	
 						<div class="Grid Grid--withGutter">
-							<div class="u-block">
+							<div class="Grid-cell">
 								<h1 class="u-mb2">
-									Abstände grafisch dargestellt
+									justify-content
 								</h1>
-								<div class="Grid-cell u-size2of3 u-before1of6">
-									<img src="assets/02-session/SVG/box-modell.svg">
-								</div>
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/flex-start.svg">								
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/center.svg">
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/flex-end.svg">
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/space-between.svg">
+							</div>
+						</div>
+					</section>
+				</section>
+
+
+				<section class="background--dark">
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="u-block">
+								<h1>
+									display: grid
+								</h1>
+							</div>
+						</div>
+					</section>
+					
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="Grid-cell u-size3of4 u-before1of8">
+								<h2>
+									Allgemeines zu CSS Grid
+								</h2>
+								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
+									Flexbox ist ein eindimensionales Layoutmodell und ermöglicht eine Platzverteilung zwischen Elementen.
+								</p>
+								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
+									Flexbox ist eindimensional. Die Elemente werden im Prinzip nur auf einer Achse verschoben. (Hauptachse) Ein CSS Grid Layout bietet zwei Dimensionen zur Platzierung und Skalierung der Container. Statt nur auf einer Achse kann man mit CSS Grid ein Raster mit Zeilen und Spalten verwenden.
+								</p>
+							</div>
+							<div class="Grid-cell u-size1of2 u-before1of4">
+								<img src="assets/04-session/SVG/flex-grids.svg">
 							</div>
 						</div>
 					</section>
 
 					<section>	
 						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<h1 class="u-mb2">
-									CSS Property Übersicht
-								</h1>
-								<div class="Grid-cell u-size2of3 u-before1of6 u-textLeft">
-									<div class="Grid-cell u-mb2">
-										<h2>SELF HTML</h2>
-										<p>Deutschsprachiges HTML und CSS Lexikon.</p>
-										<a class="u-mb2 btn" target="_blank" href="https://wiki.selfhtml.org/wiki/Schnell-Index/CSS">Zur Webseite</a>
-									</div>
-									<div class="Grid-cell u-mb2">
-										<h2>cssreference.io</h2>
-										<p>Schöner englischsprachiger visueller Guide rund um CSS</p>
-										<a class="u-mb2 btn" target="_blank" href="https://cssreference.io/">Zur Webseite</a>
-									</div>
+							<div class="Grid-cell u-size2of3 u-before1of6">
+								<h3 class="u-textLeft">
+									.grid {<br>
+									&nbsp;&nbsp;&nbsp;grid-template-columns: 2fr 1fr 1fr;<br>
+									}
+								</h3>
+							</div>
+							<div class="Grid-cell u-size1of2 u-before1of4">
+								<img src="assets/04-session/SVG/grids.svg">								
 							</div>
 						</div>
 					</section>
 
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="Grid-cell u-size2of3 u-before1of6">
+								<h3 class="u-textLeft">
+									.grid {<br>
+									&nbsp;&nbsp;&nbsp;grid-template-rows: 2fr 1fr 1fr;<br>
+									}
+								</h3>
+							</div>
+							<div class="Grid-cell u-size1of2 u-before1of4">
+								<img src="assets/04-session/SVG/grids-row.svg">
+							</div>
+						</div>
+					</section>
 
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="Grid-cell u-size2of3 u-before1of6">
+								<h3 class="u-textLeft">
+									.grid {<br>
+									&nbsp;&nbsp;&nbsp;grid-template-columns: 2fr 1fr 1fr;<br>
+									&nbsp;&nbsp;&nbsp;grid-template-rows: 2fr 1fr 1fr;<br>
+									}
+								</h3>
+							</div>
+							<div class="Grid-cell u-size1of2 u-before1of4">
+								<img src="assets/04-session/SVG/grids-combined.svg">
+							</div>
+						</div>
+					</section>
+
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="Grid-cell u-size2of3 u-before1of6">
+								<h3 class="u-textLeft">
+									.a {<br>
+									&nbsp;&nbsp;&nbsp;grid-row-start: 2;<br>
+									&nbsp;&nbsp;&nbsp;grid-column-start: 2;<br>
+									}
+								</h3>
+							</div>
+							<div class="Grid-cell u-size1of2 u-before1of4">
+								<img src="assets/04-session/SVG/grids-item.svg">
+							</div>
+						</div>
+					</section>
 				</section>
 				
-				<section class="background--dark">
-
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<h1>
-									Body Struktur
-								</h1>
-							</div>
-						</div>
-					</section>
-					
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<h1>
-									Verschachteln
-								</h1>
-								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
-									Es ist gängige Praxis unterschiedliche HTML Elemente ineinander zu verschachteln. Dabei ist zu beachten: <strong>Das zuerst geöffnete Tag muss als letztes geschlossen werden</strong>.
-								</p>
-							</div>
-
-							<div class="Grid-cell u-size2of3 u-before1of6">
-								<img src="assets/02-session/4x/nesting@4x.png">
-							</div>
-						</div>
-					</section>
-
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="Grid-cell u-size2of3 u-before1of6">
-								<img src="assets/02-session/SVG/body-structure.svg">
-							</div>
-						</div>
-					</section>
-
-				</section>
-
-								<section class="background--dark">
-
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<h1 class="u-mb2">
-									Design in Module einteilen
-								</h1>
-							</div>
-						</div>
-					</section>
-
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<div class="Grid-cell u-size2of3 u-before1of6">
-									<img src="assets/02-session/website-image.png">
-								</div>
-							</div>
-						</div>
-					</section>
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<div class="Grid-cell u-size2of3 u-before1of6">
-									<img src="assets/03-session/2x/website-modules.jpg">
-								</div>
-						</div>
-					</section>
-				</section>
-
 				<section class="background--dark">
 					<section>	
 						<div class="Grid Grid--withGutter">
@@ -350,8 +432,6 @@
 					</section>
 				</section>
 
-
-
 				<section class="background--dark">
 					
 					<section>	
@@ -361,13 +441,13 @@
 									Übung
 								</p>
 								<h1>
-									Webseite nachbauen
+									Games
 								</h1>
 								<div class="Grid-cell u-size1of2 u-before1of4">
-									<p class="u-mb2">
-										Baut die Webseite die wir in Module eingeteilt haben grob nach. Ein Starterpaket mit Bilddaten und angelegten Dateien bekommt ihr.
-									</p>
-									<a class="btn" href="session-02/uebung/uebung.zip" target="_blank">Download</a>
+									<a class="btn" href="https://cssgridgarden.com" target="_blank">CSS Grid Gardens</a>
+								</div>
+								<div class="Grid-cell u-size1of2 u-before1of4">
+									<a class="btn" href="https://flexboxfroggy.com/#de" target="_blank">Flexbox Froggy</a>
 								</div>
 							</div>
 						</div>
