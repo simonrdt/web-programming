@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Web Programming - Session 03</title>
+		<title>Web Programming - Session 05</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/simon.css">
@@ -43,9 +43,8 @@
 				<section class="background background--blue">
 					<section>	
 						<h1>
-							Session 04
+							Session 05
 						</h1>
-						<span class="Intro-subline">Layouts mit CSS</span>
 					</section>
 					<section class="background-darken">	
 						<div class="Grid Grid--withGutter">
@@ -69,47 +68,27 @@
 									</div>
 									<div class="station">
 											<p class="small-tags">
-												Ausrichtung von Elementen
+												Media Queries im CSS
 											</p>
 											<h4>
-												Layouts erstellen
+												Responsive Design
 											</h4>
-											<p>
-												Flexbox & CSS Grid
-											</p>
 									</div>
 									<div class="station">
 											<p class="small-tags">
-												Attribute und Funktionsweise
+												Hover, Focus, Active
 											</p>
 											<h4>
-												Flexbox
+												Pseudoklassen
 											</h4>
-											<p>
-												Einführung in Flexbox 
-											</p>
 									</div>
 									<div class="station">
 											<p class="small-tags">
-												Ein Grid einrichten
+												Eure Webseite
 											</p>
 											<h4>
-												CSS Grids
+												Kursprojekt
 											</h4>
-											<p>
-												Einführung in CSS Grids
-											</p>
-									</div>
-									<div class="station">
-											<p class="small-tags">
-												Vertiefung
-											</p>
-											<h4>
-												Flexbox Froggy / Flexbox Defense / CSS Grid Garden
-											</h4>
-											<p>
-												Game
-											</p>
 									</div>
 								</div>
 							</div>
@@ -121,37 +100,19 @@
 				<section class="background--dark">
 					<section>	
 						<h1>
-							Ausrichtung von Elementen
+							Media Queries im CSS
 						</h1>
-						<span class="Intro-subline">Flexbox & CSS Grid</span>
+						<span class="Intro-subline">Responsive Design</span>
 					</section>
 
 					<section>	
 						<div class="Grid Grid--withGutter">
 							<div class="Grid-cell u-size3of4 u-before1of8">
 								<h2>
-									Welche Möglichkeiten gibt es Layouts mit CSS Grids zu realisieren?
+									Was sind Media Queries?
 								</h2>
 								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
-									Die beiden gängisten und beliebtesten Möglichkeiten zur Umsetzung von Layouts sind die CSS Eigenschaften Flexbox und Grid.
-
-									Sie wurden entwickelt um Konstruktionen von flexiblen und responsiven Layouts zu ermöglichen.
-								</p>
-								<img class="u-mb2" src="assets/04-session/SVG/init-flex.svg">
-								<img class="u-mb2" src="assets/04-session/SVG/init-grid.svg">
-
-							</div>
-						</div>
-					</section>
-
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="Grid-cell u-size3of4 u-before1of8">
-								<h2>
-									Wie funktioniert das?
-								</h2>
-								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
-									Mit dem Hinzufügen des Attributes zu einem Container werden automatisch alle Child-Elemente des Containers auf erster Ebene zu Flex-items (flex) oder Inhaltscontaintern (grid). Diese können dann mit weiteren Eigenschaften versehen werden.
+									Medienabfragen können verschiedene Merkmale abfragen. So kann die Webseite erkennen, welches Gerät genutzt wird. Gängige  Merkmale die Abgefragt werden sind zum Beispiel: (device-)width, (device-)height, resolution, orientation und Mediatypen.
 								</p>
 							</div>
 						</div>
@@ -161,16 +122,11 @@
 						<div class="Grid Grid--withGutter">
 							<div class="Grid-cell u-size3of4 u-before1of8">
 								<h2>
-									Beispiel Grid
+									Wofür nutzen wir Media Queries? 
 								</h2>
-								<div class="Grid-cell u-size3of4 u-before1of8 u-mb2">
-									<p class="codepen" data-height="386" data-theme-id="dark" data-default-tab="result" data-user="simonrdt" data-slug-hash="NWGVaab" style="height: 386px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="CSS Grid Example">
-									  <span>See the Pen <a href="https://codepen.io/simonrdt/pen/NWGVaab">
-									  CSS Grid Example</a> by Simon Reinhardt (<a href="https://codepen.io/simonrdt">@simonrdt</a>)
-									  on <a href="https://codepen.io">CodePen</a>.</span>
-									</p>
-									<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-								</div>
+								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
+									Mit Hilfe von Media Queries können wir für verschiedene Bildschirmgrößen unterschiedliche Styles festlegen.
+								</p>
 							</div>
 						</div>
 					</section>
@@ -179,12 +135,12 @@
 						<div class="Grid Grid--withGutter">
 							<div class="Grid-cell u-size3of4 u-before1of8">
 								<h2>
-									Beispiel Flexbox
+									Beispiel:
 								</h2>
 								<div class="Grid-cell u-size3of4 u-before1of8 u-mb2">
-									<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="simonrdt" data-slug-hash="WNQBZzp" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="CSS Flexbox Example">
-								  <span>See the Pen <a href="https://codepen.io/simonrdt/pen/WNQBZzp">
-								  CSS Flexbox Example</a> by Simon Reinhardt (<a href="https://codepen.io/simonrdt">@simonrdt</a>)
+									<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="simonrdt" data-slug-hash="YzwzyGd" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Example Media Queries">
+								  <span>See the Pen <a href="https://codepen.io/simonrdt/pen/YzwzyGd">
+								  Example Media Queries</a> by Simon Reinhardt (<a href="https://codepen.io/simonrdt">@simonrdt</a>)
 								  on <a href="https://codepen.io">CodePen</a>.</span>
 								</p>
 								<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
@@ -192,6 +148,20 @@
 							</div>
 						</div>
 					</section>
+
+
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="Grid-cell u-size3of4 u-before1of8">
+								<h2>
+									Übung
+								</h2>
+								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
+									Mit Hilfe von Media Queries auf dem mobilen Endgerät die Flasche und Beschreibung untereinander darstellen. 
+								</p>
+							</div>
+						</div>
+					</section>
 				</section>
 
 				<section class="background--dark">
@@ -200,7 +170,7 @@
 						<div class="Grid Grid--withGutter">
 							<div class="u-block">
 								<h1>
-									display: flex
+									Pseudoelemente
 								</h1>
 							</div>
 						</div>
@@ -210,13 +180,13 @@
 						<div class="Grid Grid--withGutter">
 							<div class="Grid-cell u-size3of4 u-before1of8">
 								<h2>
-									Allgemeines zu Flexbox
+									Was sind Pseudoelemente?
 								</h2>
 								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
-									Flexbox ist ein eindimensionales Layoutmodell und ermöglicht eine Platzverteilung zwischen Elementen.
+									Pseudoelemente sprechen auf eine unmittelbare Interaktion des Nutzers mit der Webseite an. Neben einigen Anderen sind die für uns Wichtigsten: hover, focus und active.
 								</p>
 								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
-									Bei der Arbeit mit Flexbox muss man in zwei Achsen denken - der Hauptachse und der Querachse. Die Hauptachse wird durch die Eigenschaft flex-direction definiert, und die Querachse verläuft senkrecht dazu. Alles, was wir mit flexbox machen, bezieht sich auf diese Achsen.
+									Wenn wir ein Element mit einem Pseudoelement nutzen wollen, rufen wir diese mit einem Doppelpunkt und dem entsprechenden Selektor an. Zum Beispiel <strong>:hover, :focus, :active</strong>.
 								</p>
 							</div>
 						</div>
@@ -226,14 +196,26 @@
 						<div class="Grid Grid--withGutter">
 							<div class="Grid-cell u-size2of3 u-before1of6">
 								<h2>
-									flex-direction: row (default)
+									Übersicht
 								</h2>
-							</div>
-							<div class="Grid-cell u-size1of2">
-								<img src="assets/04-session/SVG/flexbox.svg">								
-							</div>
-							<div class="Grid-cell u-size1of2">
-								<img src="assets/04-session/SVG/row.svg">								
+								<h3>
+									:hover
+								</h3>
+								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
+									Mit dem Mauszeiger berühren.
+								</p>
+								<h3>
+									:focus
+								</h3>
+								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
+									Fokus erhalten, zum Beispiel durch Tabulatortaste.
+								</p>
+								<h3>
+									:active
+								</h3>
+								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
+									Aktuell angeklickt.
+								</p>
 							</div>
 						</div>
 					</section>
@@ -242,184 +224,38 @@
 						<div class="Grid Grid--withGutter">
 							<div class="Grid-cell u-size2of3 u-before1of6">
 								<h2>
-									flex-direction: row | row-reverse | column | column-reverse
+									Beispiel 
 								</h2>
 							</div>
-							<div class="Grid-cell u-size1of2">
-								<img src="assets/04-session/SVG/flexbox.svg">								
-							</div>
-							<div class="Grid-cell u-size1of2">
-								<img src="assets/04-session/SVG/flex-row-rev.svg">
-							</div>
-							<div class="Grid-cell u-size1of2">
-								<img src="assets/04-session/SVG/flex-col.svg">
-							</div>
-							<div class="Grid-cell u-size1of2">
-								<img src="assets/04-session/SVG/flex-col-rev.svg">
+								<div class="Grid-cell u-size3of4 u-before1of8 u-mb2">
+
+									<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="simonrdt" data-slug-hash="YzwzyGd" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Example Media Queries">
+									  <span>See the Pen <a href="https://codepen.io/simonrdt/pen/YzwzyGd">
+									  Example Media Queries</a> by Simon Reinhardt (<a href="https://codepen.io/simonrdt">@simonrdt</a>)
+									  on <a href="https://codepen.io">CodePen</a>.</span>
+									</p>
+									<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 							</div>
 						</div>
 					</section>
 
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="Grid-cell u-size1of2">
-								<img src="assets/04-session/SVG/row.svg">								
-							</div>
-							<div class="Grid-cell u-size1of2">
-								<img src="assets/04-session/SVG/row-rev.svg">
-							</div>
-							<div class="Grid-cell u-size1of2">
-								<img src="assets/04-session/SVG/col.svg">
-							</div>
-							<div class="Grid-cell u-size1of2">
-								<img src="assets/04-session/SVG/col-rev.svg">
-							</div>
-						</div>
-					</section>
 
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<h1 class="u-mb2">
-									Ausrichtung
-								</h1>
-								<div class="Grid-cell u-size2of3 u-before1of6 u-textLeft">
-									<div class="Grid-cell u-mb2">
-										<h2>Ausrichtung auf der Hauptachse</h2>
-										<h3 class="small-tags">justify-content: flex-start | center | flex-end | space-around | space-between</h3>
-										<p class="u-mb2">Es werden alle flex-items auf der Hauptachse entsprechend der jeweiligen Eigenschaft in dem freien Raum ausgerichtet.</p>
-									</div>
-									<div class="Grid-cell u-mb2">
-										<h2>Ausrichtung auf der Kreuzachse</h2>
-										<h3 class="small-tags">align-items: flex-start | center | flex-end | baseline | stretch</h3>
-										<p class="u-mb2">Standardmäßig passt sich die Höhe oder Breite auf der Kreuzachse immer dem größten Element an (stretch). Wir können auch hier aber unterschiedliche Eigenschaften verwenden</p>
-									</div>
-									<div class="Grid-cell u-mb2">
-										<h2>Mehrspaltigkeit über das Container-Element </h2>
-										<h3 class="small-tags">flex-wrap: wrap | no-wrap</h3>
-										<p class="u-mb2"> Mit der Container-Eigenschaft flex-wrap kann festgelegt werden, dass Items in mehrere Spalten und Zeilen umbrechen.</p>
-								</div>
-							</div>
-						</div>
-					</section>
-
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="Grid-cell">
-								<h1 class="u-mb2">
-									justify-content
-								</h1>
-							</div>
-							<div class="Grid-cell u-size1of2">
-								<img src="assets/04-session/SVG/flex-start.svg">								
-							</div>
-							<div class="Grid-cell u-size1of2">
-								<img src="assets/04-session/SVG/center.svg">
-							</div>
-							<div class="Grid-cell u-size1of2">
-								<img src="assets/04-session/SVG/flex-end.svg">
-							</div>
-							<div class="Grid-cell u-size1of2">
-								<img src="assets/04-session/SVG/space-between.svg">
-							</div>
-						</div>
-					</section>
-				</section>
-
-
-				<section class="background--dark">
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="u-block">
-								<h1>
-									display: grid
-								</h1>
-							</div>
-						</div>
-					</section>
-					
 					<section>	
 						<div class="Grid Grid--withGutter">
 							<div class="Grid-cell u-size3of4 u-before1of8">
 								<h2>
-									Allgemeines zu CSS Grid
+									Übung
 								</h2>
 								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
-									Flexbox ist ein eindimensionales Layoutmodell und ermöglicht eine Platzverteilung zwischen Elementen.
-								</p>
-								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
-									Flexbox ist eindimensional. Die Elemente werden im Prinzip nur auf einer Achse verschoben. (Hauptachse) Ein CSS Grid Layout bietet zwei Dimensionen zur Platzierung und Skalierung der Container. Statt nur auf einer Achse kann man mit CSS Grid ein Raster mit Zeilen und Spalten verwenden.
+									Erstellt einen Hover Effekt für den Button bei dem die Schrift fett wird und der Hintergrund ein Grauton eurer Wahl.
 								</p>
 							</div>
-							<div class="Grid-cell u-size1of2 u-before1of4">
-								<img src="assets/04-session/SVG/flex-grids.svg">
-							</div>
 						</div>
 					</section>
 
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="Grid-cell u-size2of3 u-before1of6">
-								<h3 class="u-textLeft">
-									.grid {<br>
-									&nbsp;&nbsp;&nbsp;grid-template-columns: 2fr 1fr 1fr;<br>
-									}
-								</h3>
-							</div>
-							<div class="Grid-cell u-size1of2 u-before1of4">
-								<img src="assets/04-session/SVG/grids.svg">								
-							</div>
-						</div>
-					</section>
-
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="Grid-cell u-size2of3 u-before1of6">
-								<h3 class="u-textLeft">
-									.grid {<br>
-									&nbsp;&nbsp;&nbsp;grid-template-rows: 2fr 1fr 1fr;<br>
-									}
-								</h3>
-							</div>
-							<div class="Grid-cell u-size1of2 u-before1of4">
-								<img src="assets/04-session/SVG/grids-row.svg">
-							</div>
-						</div>
-					</section>
-
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="Grid-cell u-size2of3 u-before1of6">
-								<h3 class="u-textLeft">
-									.grid {<br>
-									&nbsp;&nbsp;&nbsp;grid-template-columns: 2fr 1fr 1fr;<br>
-									&nbsp;&nbsp;&nbsp;grid-template-rows: 2fr 1fr 1fr;<br>
-									}
-								</h3>
-							</div>
-							<div class="Grid-cell u-size1of2 u-before1of4">
-								<img src="assets/04-session/SVG/grids-combined.svg">
-							</div>
-						</div>
-					</section>
-
-					<section>	
-						<div class="Grid Grid--withGutter">
-							<div class="Grid-cell u-size2of3 u-before1of6">
-								<h3 class="u-textLeft">
-									.a {<br>
-									&nbsp;&nbsp;&nbsp;grid-row-start: 2;<br>
-									&nbsp;&nbsp;&nbsp;grid-column-start: 2;<br>
-									}
-								</h3>
-							</div>
-							<div class="Grid-cell u-size1of2 u-before1of4">
-								<img src="assets/04-session/SVG/grids-item.svg">
-							</div>
-						</div>
-					</section>
 				</section>
-				
+
+
 				<section class="background--dark">
 					<section>	
 						<div class="Grid Grid--withGutter">
@@ -438,17 +274,11 @@
 						<div class="Grid Grid--withGutter">
 							<div class="u-block">
 								<p class="small-tags">
-									Übung
+									Kursprojekt
 								</p>
 								<h1>
-									Games
+									Eure Webseite
 								</h1>
-								<div class="Grid-cell u-size1of2 u-before1of4">
-									<a class="btn" href="https://cssgridgarden.com" target="_blank">CSS Grid Gardens</a>
-								</div>
-								<div class="Grid-cell u-size1of2 u-before1of4">
-									<a class="btn" href="https://flexboxfroggy.com/#de" target="_blank">Flexbox Froggy</a>
-								</div>
 							</div>
 						</div>
 					</section>
