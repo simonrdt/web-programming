@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Web Programming - Session 03</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simon.css">
+		<link rel="stylesheet" href="https://use.typekit.net/vkx8lhz.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section class="background background--graphic">	
+					<section class="u-textLeft">
+					<div class="u-mb2">
+						<h1>
+							Web Programming
+						</h1>
+						<span class="Intro-subline"> Design Factory International Hamburg - SS20</span>
+					</div>	
+						<p><em>“Everybody in this country should learn to program a computer, because it teaches you how to think"</em></p>
+						<p><em>— Steve Jobs</em></p>
+
+					</section>
+				</section>
+
+
+
+				<section class="background--dark">
+					<section>	
+						<h1>
+							Ausrichtung von Elementen
+						</h1>
+						<span class="Intro-subline">Flexbox & CSS Grid</span>
+					</section>
+
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="Grid-cell u-size3of4 u-before1of8">
+								<h2>
+									Welche Möglichkeiten gibt es Layouts mit CSS zu realisieren?
+								</h2>
+								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
+									Die gängiste und beliebteste Möglichkeit zur Umsetzung von Layouts ist mit Hilfe der CSS Eigenschaft Flexbox.
+									Neuerdings gibt es auch die CSS Eigenschaft "display: grid" die aktuell aber leider noch schlecht unterstützt wird.
+									
+									Beide wurden entwickelt um Konstruktionen von flexiblen und responsiven Layouts zu ermöglichen.
+								</p>
+								<img class="u-mb2" src="assets/04-session/SVG/init-flex.svg">
+								<img class="u-mb2" src="assets/04-session/SVG/init-grid.svg">
+
+							</div>
+						</div>
+					</section>
+
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="Grid-cell u-size3of4 u-before1of8">
+								<h2>
+									Wie funktioniert das?
+								</h2>
+								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
+									Mit dem Hinzufügen des Attributes zu einem Container werden automatisch alle Child-Elemente des Containers auf erster Ebene zu Flex-items (flex). Diese können dann mit weiteren Eigenschaften versehen werden.
+								</p>
+							</div>
+						</div>
+					</section>
+
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="Grid-cell u-size3of4 u-before1of8">
+								<h2>
+									Beispiel Flexbox
+								</h2>
+								<div class="Grid-cell u-mb2">
+									<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="simonrdt" data-slug-hash="WNQBZzp" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="CSS Flexbox Example">
+							  <span>See the Pen <a href="https://codepen.io/simonrdt/pen/WNQBZzp">
+							  CSS Flexbox Example</a> by Simon Reinhardt (<a href="https://codepen.io/simonrdt">@simonrdt</a>)
+							  on <a href="https://codepen.io">CodePen</a>.</span>
+							</p>
+							<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+								</div>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<section class="background--dark">
+
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="u-block">
+								<h1>
+									display: flex
+								</h1>
+							</div>
+						</div>
+					</section>
+					
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="Grid-cell u-size3of4 u-before1of8">
+								<h2>
+									Allgemeines zu Flexbox
+								</h2>
+								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
+									Flexbox ist ein eindimensionales Layoutmodell.
+								</p>
+								<p class="Grid-cell u-size3of4 u-before1of8 u-mb2">
+									Bei der Arbeit mit Flexbox muss man in zwei Achsen denken - der Hauptachse und der Querachse. Die Hauptachse wird durch die Eigenschaft flex-direction definiert, und die Querachse verläuft senkrecht dazu. Alles, was wir mit flexbox machen, bezieht sich auf diese Achsen.
+								</p>
+							</div>
+						</div>
+					</section>
+
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="Grid-cell u-size2of3 u-before1of6">
+								<h2>
+									flex-direction: row (default)
+								</h2>
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/flexbox.svg">								
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/row.svg">								
+							</div>
+						</div>
+					</section>
+
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="Grid-cell u-size2of3 u-before1of6">
+								<h2>
+									flex-direction: row | row-reverse | column | column-reverse
+								</h2>
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/flexbox.svg">								
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/flex-row-rev.svg">
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/flex-col.svg">
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/flex-col-rev.svg">
+							</div>
+						</div>
+					</section>
+
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/row.svg">								
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/row-rev.svg">
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/col.svg">
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/col-rev.svg">
+							</div>
+						</div>
+					</section>
+
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="u-block">
+								<h1 class="u-mb2">
+									Ausrichtung
+								</h1>
+								<div class="Grid-cell u-size2of3 u-before1of6 u-textLeft">
+									<div class="Grid-cell u-mb2">
+										<h2>Ausrichtung auf der Hauptachse</h2>
+										<h3 class="small-tags">justify-content: flex-start | center | flex-end | space-around | space-between</h3>
+										<p class="u-mb2">Es werden alle flex-items auf der Hauptachse entsprechend der jeweiligen Eigenschaft ausgerichtet.</p>
+									</div>
+									<div class="Grid-cell u-mb2">
+										<h2>Ausrichtung auf der Kreuzachse</h2>
+										<h3 class="small-tags">align-items: flex-start | center | flex-end | baseline | stretch</h3>
+										<p class="u-mb2">Standardmäßig passt sich die Höhe oder Breite auf der Kreuzachse immer dem größten Element an (stretch). Wir können auch hier aber unterschiedliche Eigenschaften verwenden</p>
+									</div>
+									<div class="Grid-cell u-mb2">
+										<h2>Mehrspaltigkeit über das Container-Element </h2>
+										<h3 class="small-tags">flex-wrap: wrap | no-wrap</h3>
+										<p class="u-mb2"> Mit der Container-Eigenschaft flex-wrap kann festgelegt werden, dass Items in mehrere Spalten oder Zeilen umbrechen.</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="Grid-cell">
+								<h1 class="u-mb2">
+									justify-content
+								</h1>
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/flex-start.svg">								
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/center.svg">
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/flex-end.svg">
+							</div>
+							<div class="Grid-cell u-size1of2">
+								<img src="assets/04-session/SVG/space-between.svg">
+							</div>
+						</div>
+					</section>
+				</section>
+
+
+				<section class="background--dark">
+					
+					<section>	
+						<div class="Grid Grid--withGutter">
+							<div class="u-block">
+								<p class="small-tags">
+									Übung
+								</p>
+								<h1>
+									Games
+								</h1>
+								<div class="Grid-cell u-size1of2 u-before1of4">
+									<a class="btn" href="https://flexboxfroggy.com/#de" target="_blank">Flexbox Froggy</a>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				</section>
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
